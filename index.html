@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Irene ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader"><div class="loader-heart">♥</div><p>Preparing something special...</p></div>
+<div id="particles"></div>
+<canvas id="confetti"></canvas>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">A little website made with love</p>
+    <h1>Happy Birthday,<br><span id="typing"></span><span class="cursor">|</span></h1>
+    <p class="hero-date">30 · 09 · 2008</p>
+    <p class="hero-note">To the girl who makes ordinary days feel extraordinary.</p>
+    <button class="gold-btn" id="start">Open my heart <span>♡</span></button>
+  </div>
+  <div class="scroll">SCROLL TO DISCOVER<br><span>↓</span></div>
+</section>
+
+<section class="intro reveal">
+  <p class="eyebrow">Dear Irene</p>
+  <h2>Hari ini dunia punya alasan<br>untuk tersenyum lebih lebar.</h2>
+  <div class="divider">♡</div>
+  <p class="lead">Karena pada tanggal 30 September 2008, lahirlah seseorang yang kelak menjadi salah satu bagian paling indah dalam hidupku.</p>
+</section>
+
+<section class="count-section reveal">
+  <p class="eyebrow">One special day</p>
+  <h2>Another beautiful chapter</h2>
+  <div class="countdown">
+    <div><strong id="days">00</strong><span>Days</span></div>
+    <div><strong id="hours">00</strong><span>Hours</span></div>
+    <div><strong id="mins">00</strong><span>Minutes</span></div>
+    <div><strong id="secs">00</strong><span>Seconds</span></div>
+  </div>
+  <p class="tiny">Menuju ulang tahunmu berikutnya ✨</p>
+</section>
+
+<section class="photo-section reveal">
+  <div class="photo-wrap">
+    <img src="foto-kita.jpg" alt="Irene & Andrew" onerror="this.classList.add('missing')">
+    <div class="photo-fallback"><span>📷</span><b>Foto kita</b><small>Tambahkan foto bernama <code>foto-kita.jpg</code></small></div>
+  </div>
+  <div class="photo-copy">
+    <p class="eyebrow">A memory to keep</p>
+    <h2>Kalau waktu bisa disimpan,<br>aku ingin menyimpan kita.</h2>
+    <p>Aku mungkin tidak bisa menghentikan waktu, tapi aku bisa membuat sebanyak mungkin kenangan bersamamu. Karena suatu hari nanti, kenangan-kenangan kecil inilah yang akan membuat kita tersenyum.</p>
+  </div>
+</section>
+
+<section class="letter-section reveal">
+  <div class="letter">
+    <p class="eyebrow">A letter for you</p>
+    <h2>Untuk Irene,<br>perempuan kesayanganku.</h2>
+    <p>Terima kasih sudah hadir. Terima kasih untuk semua tawa, cerita, perhatian, dan hal-hal kecil yang mungkin menurutmu biasa saja, tetapi bagi aku punya arti yang jauh lebih besar.</p>
+    <p>Aku tidak akan bilang bahwa hidup setelah bertemu kamu selalu sempurna. Tidak. Kita mungkin akan punya hari yang sulit, salah paham, atau hari ketika semuanya terasa melelahkan.</p>
+    <p>Tapi kalau boleh memilih, di antara semua orang dan semua kemungkinan yang ada, aku tetap ingin mengenal kamu, mendengarkan kamu, dan berjalan bersama kamu.</p>
+    <p>Semoga di usia yang baru ini kamu mendapatkan lebih banyak alasan untuk bahagia. Semoga mimpi-mimpi kamu satu per satu menemukan jalannya. Dan semoga kamu selalu ingat bahwa ada seseorang yang dengan tulus mendoakan kebahagiaanmu.</p>
+    <div class="signature">— Andrew Susanto ♡</div>
+  </div>
+</section>
+
+<section class="reasons reveal">
+  <p class="eyebrow">Little things I love</p>
+  <h2>Hal-hal kecil tentang kamu<br>yang selalu aku suka.</h2>
+  <div class="cards">
+    <article><span>01</span><h3>Senyummu</h3><p>Entah bagaimana caranya, tapi senyummu sering menjadi mood booster terbaikku.</p></article>
+    <article><span>02</span><h3>Cara kamu bercerita</h3><p>Aku bisa mendengarkan cerita random kamu lebih lama daripada yang kamu kira.</p></article>
+    <article><span>03</span><h3>Tingkah randommu</h3><p>Kadang bikin aku ketawa, kadang bikin geleng kepala. Tetap saja, aku suka.</p></article>
+    <article><span>04</span><h3>Hati kamu</h3><p>Di balik semua sisi kamu, ada hati yang ingin aku jaga dan hargai.</p></article>
+  </div>
+</section>
+
+<section class="surprise reveal">
+  <p class="eyebrow">One last thing</p>
+  <h2>Aku menyimpan satu pesan<br>yang belum kamu baca.</h2>
+  <button class="gold-btn" id="openSecret">Buka pesan rahasia 💌</button>
+  <div id="secret" class="secret">
+    <div class="secret-inner">
+      <div class="seal">♥</div>
+      <h3>Irene...</h3>
+      <p>Kalau suatu hari kamu merasa tidak cukup, baca ini lagi:</p>
+      <p class="quote">“Kamu tidak harus menjadi sempurna untuk dicintai. Menjadi kamu saja sudah cukup.”</p>
+      <p>Aku tidak tahu apa yang akan terjadi di masa depan. Tapi untuk hari ini, aku ingin kamu tahu satu hal sederhana:</p>
+      <h4>Aku sayang kamu.<br>Dan aku bersyukur kamu ada. ❤️</h4>
+      <p class="forever">Happy Birthday, my favorite person.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ending">
+  <div class="ending-content">
+    <p class="eyebrow">Made especially for</p>
+    <h2>Irene<br>Anastasya Gayatri</h2>
+    <div class="big-heart">♥</div>
+    <p>From someone who loves you,<br><strong>Andrew Susanto</strong></p>
+    <p class="date-small">30 September 2008 · and every day after that.</p>
+  </div>
+</section>
+
+<audio id="music" loop><source src="musik.mp3" type="audio/mpeg"></audio>
+<button class="music" id="music">♫</button>
+<script src="script.js"></script>
+</body>
+</html>
