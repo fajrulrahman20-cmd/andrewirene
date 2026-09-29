@@ -1,4 +1,4 @@
-# Birthday Website — Irene ❤️
+# Birthday Website — Irene — 18th Birthday ❤️
 
 Untuk: Irene Anastasya Gayatri
 Dari: Andrew Susanto
@@ -13,3 +13,10 @@ Masukkan lagu MP3 dengan nama `musik.mp3`.
 ## GitHub Pages
 Upload semua file ke repository GitHub, lalu:
 Settings → Pages → Deploy from a branch → main → / (root) → Save.
+
+
+MUSIK:
+Tambahkan file musik.mp3 ke folder yang sama dengan index.html. Website akan mencoba memutar musik setelah tombol "Buka hadiah & putar lagu" ditekan.
+
+
+Versi ini sudah disiapkan untuk ucapan ulang tahun Irene yang ke-18.

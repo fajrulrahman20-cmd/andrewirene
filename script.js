@@ -32,9 +32,24 @@ document.getElementById("openSecret").onclick=()=>{
 };
 
 const music=document.getElementById("music");
-const musicBtn=document.querySelector(".music");
-function playMusic(){music.play().then(()=>musicBtn.textContent="🔊").catch(()=>{})}
-musicBtn.onclick=()=>{if(music.paused){playMusic()}else{music.pause();musicBtn.textContent="♫"}};
+const musicBtn=document.getElementById("musicBtn");
+const musicLabel=document.getElementById("musicLabel");
+function setMusicUI(playing){
+  musicBtn.textContent=playing?"❚❚":"♫";
+  musicBtn.classList.toggle("playing",playing);
+  musicLabel.textContent=playing?"Musik sedang bermain ♥":"Putar lagu romantis";
+}
+function playMusic(){
+  music.play().then(()=>setMusicUI(true)).catch(()=>{
+    setMusicUI(false);
+    musicLabel.textContent="Tekan tombol ♫ untuk memutar";
+  });
+}
+musicBtn.onclick=()=>{
+  if(music.paused){playMusic()}else{music.pause();setMusicUI(false)}
+};
+music.addEventListener("play",()=>setMusicUI(true));
+music.addEventListener("pause",()=>setMusicUI(false));
 
 setInterval(()=>{
  const p=document.createElement("div");p.className="particle";p.textContent=["♡","✦","♥","·"][Math.floor(Math.random()*4)];
